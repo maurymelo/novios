@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Primer año juntos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #e91e63;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    #contador {
+      font-size: 1.8em;
+      margin: 30px 0;
+    }
+    .tiempo {
+      font-size: 1.6em;
+      margin: 10px 0;
+    }
+    .galeria img {
+      width: 250px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    audio {
+      margin-top: 20px;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+    #preSorpresa {
+      display: block;
+      margin-top: 40px;
+    }
+    #reveal {
+      display: block;
+    }
+    #startBtn {
+      background: #e91e63;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+        padding: 10px;
+      }
+      .tiempo {
+        font-size: 1.2em;
+      }
+      .galeria img {
+        width: 90%;
+        margin: 10px auto;
+      }
+      #startBtn {
+        width: 90%;
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Primer año juntos</h1>
+  <div id="contador">
+    <div class='tiempo'>Días: <strong>0</strong></div>
+    <div class='tiempo'>Horas: <strong>0</strong></div>
+    <div class='tiempo'>Minutos: <strong>0</strong></div>
+    <div class='tiempo'>Segundos: <strong>0</strong></div>
+  </div>
+  <div id="preSorpresa">
+    <canvas id="canvas"></canvas>
+    <p style="font-size: 1.2em;">🎁 La sorpresa está lista...</p>
+    <button id="startBtn" onclick="revelar()">Presiona para avanzar</button>
+  </div>
+  <div id="reveal">
+    <div class="galeria">
+      <p>(Aquí irían las imágenes y la música si se suben con recursos locales)</p>
+    </div>
+    <p style='font-size: 1.5em; color: #e91e63; margin-top: 30px;'>💬 Sin ti no soy nadie, por eso te quiero para toda la vida. 💞</p>
+  </div>
+</body>
+</html>
